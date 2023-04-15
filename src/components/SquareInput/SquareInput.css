@@ -1,0 +1,12 @@
+.square_input {
+    width: 100px;
+    height: 100px;
+    background-color: #61dafb;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 64px;
+    vertical-align: center;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+}
