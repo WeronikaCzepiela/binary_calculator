@@ -13,29 +13,23 @@ const App = () => {
             <div className={"calculator"}>
                 <div className={"left_section"}>
                     <div className="arg1">
-                        <SquareInput variant={"arg1"}/>
-                        <SquareInput variant={"arg1"}/>
-                        <SquareInput variant={"arg1"}/>
-                        <SquareInput variant={"arg1"}/>
+                        {
+                            Array.from({length: 4}).map((item, idx) => <SquareInput order={idx} variant={"arg1"}/>)
+                        }
                     </div>
 
                     <div className="arg2">
-                        <SquareInput variant={"arg2"}/>
-                        <SquareInput variant={"arg2"}/>
-                        <SquareInput variant={"arg2"}/>
-                        <SquareInput variant={"arg2"}/>
+                        {
+                            Array.from({length: 4}).map((item, idx) => <SquareInput order={idx} variant={"arg2"}/>)
+                        }
+
                     </div>
                     <div className={"left_bottom_section"}>
                         <div className={"horizontal-left"}/>
                         <div className="result">
-                            <SquareInput variant={"result"}/>
-                            <SquareInput variant={"result"}/>
-                            <SquareInput variant={"result"}/>
-                            <SquareInput variant={"result"}/>
-                            <SquareInput variant={"result"}/>
-                            <SquareInput variant={"result"}/>
-                            <SquareInput variant={"result"}/>
-                            <SquareInput variant={"result"}/>
+                            {
+                                Array.from({length: 8}).map((item, idx) => <SquareInput order={idx} variant={"result"}/>)
+                            }
                         </div>
                     </div>
 
@@ -53,7 +47,8 @@ const App = () => {
             <div className={"bottom"}>
                 <p>Check my accounts</p>
                 <a target={"_blank"} href={"https://github.com/WeronikaCzepiela"}> <img src={GitHub}/> </a>
-                <a target={"_blank"} href={"https://www.linkedin.com/in/--weronika-czepiela/"}> <img src={LinkdedIn}/> </a>
+                <a target={"_blank"} href={"https://www.linkedin.com/in/--weronika-czepiela/"}> <img src={LinkdedIn}/>
+                </a>
             </div>
         </div>
     );

@@ -4,29 +4,32 @@ import {useState} from "react";
 import {getDefaultValueByVariant} from "./SquareInput.helpers";
 
 
-export const SquareInput = ({variant}) => {
+export const SquareInput = ({order, variant}) => {
     const [value, setValue] = useState(getDefaultValueByVariant(variant));
 
     const handleOnInputClick = () => {
-        switch (value) {
-            case '+':
-                setValue('-')
-                break;
-            case '-':
-                setValue('*')
-                break;
-            case '*':
-                setValue('/')
-                break;
-            case '/':
-                setValue('+')
-                break;
-            case '0':
-                setValue('1')
-                break;
-            case '1':
-                setValue('0')
-                break;
+        console.log(order)
+        if (variant !== 'result') {
+            switch (value) {
+                case '+':
+                    setValue('-')
+                    break;
+                case '-':
+                    setValue('*')
+                    break;
+                case '*':
+                    setValue('/')
+                    break;
+                case '/':
+                    setValue('+')
+                    break;
+                case '0':
+                    setValue('1')
+                    break;
+                case '1':
+                    setValue('0')
+                    break;
+            }
         }
     }
 
