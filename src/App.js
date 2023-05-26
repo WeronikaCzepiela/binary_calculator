@@ -1,5 +1,7 @@
 import './App.css';
 import {SquareInput} from "./components/SquareInput/SquareInput";
+import GitHub from './images/GitHub.png';
+import LinkdedIn from './images/LinkedIn.png';
 
 const App = () => {
     return (
@@ -49,9 +51,9 @@ const App = () => {
                 </div>
             </div>
             <div className={"bottom"}>
-                <p></p>
-                <a></a>
-                <a></a>
+                <p>Check my accounts</p>
+                <a target={"_blank"} href={"https://github.com/WeronikaCzepiela"}> <img src={GitHub}/> </a>
+                <a target={"_blank"} href={"https://www.linkedin.com/in/--weronika-czepiela/"}> <img src={LinkdedIn}/> </a>
             </div>
         </div>
     );
