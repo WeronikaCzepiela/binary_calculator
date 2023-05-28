@@ -2,8 +2,14 @@ import './App.css';
 import {SquareInput} from "./components/SquareInput/SquareInput";
 import GitHub from './images/GitHub.png';
 import LinkdedIn from './images/LinkedIn.png';
+import {useState} from "react";
 
 const App = () => {
+    const [arg1, setArg1] = useState(Array.from({length: 4}).map(() => '0'))
+    const [arg2, setArg2] = useState(Array.from({length: 4}).map(() => '0'))
+    const [result, setResult] = useState(Array.from({length: 8}).map(() => '0'))
+    const [operator, setOperator] = useState('+')
+
     return (
         <div className="App">
             <div className={"top"}>
@@ -14,13 +20,13 @@ const App = () => {
                 <div className={"left_section"}>
                     <div className="arg1">
                         {
-                            Array.from({length: 4}).map((item, idx) => <SquareInput order={idx} variant={"arg1"}/>)
+                            Array.from({length: 4}).map((item, idx) => <SquareInput lineValues={arg1} setLineValues={setArg1} order={idx} variant={"arg1"}/>)
                         }
                     </div>
 
                     <div className="arg2">
                         {
-                            Array.from({length: 4}).map((item, idx) => <SquareInput order={idx} variant={"arg2"}/>)
+                            Array.from({length: 4}).map((item, idx) => <SquareInput lineValues={arg2} setLineValues={setArg2} order={idx} variant={"arg2"}/>)
                         }
 
                     </div>
@@ -28,7 +34,7 @@ const App = () => {
                         <div className={"horizontal-left"}/>
                         <div className="result">
                             {
-                                Array.from({length: 8}).map((item, idx) => <SquareInput order={idx} variant={"result"}/>)
+                                Array.from({length: 8}).map((item, idx) => <SquareInput order={idx} lineValues={result} setLineValues={setResult} variant={"result"}/>)
                             }
                         </div>
                     </div>
@@ -38,7 +44,7 @@ const App = () => {
                     <div className={"vertical"}/>
                     <div className={"operator_line"}>
                         <div className="operator">
-                            <SquareInput variant={"operator"}/>
+                            <SquareInput lineValues={operator} setLineValues={setOperator} variant={"operator"}/>
                         </div>
                         <div className={"horizontal-right"}/>
                     </div>
