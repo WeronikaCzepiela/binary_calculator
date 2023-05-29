@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import {SquareInput} from "./components/SquareInput/SquareInput";
 import GitHub from './images/GitHub.png';
 import LinkdedIn from './images/LinkedIn.png';
