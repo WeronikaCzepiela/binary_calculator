@@ -19,14 +19,6 @@ export const SquareInput = ({lineValues, setLineValues, order, variant}) => {
         }
     }
 
-
-    const binaryValueArg1 = lineValues.toString(variant === "arg1");
-    // console.log(binaryValueArg1)
-// const decimalValue
-
-
-
-
     return (
         <div onClick={handleOnInputClick} className={"square_input"}
              style={{backgroundColor: SquareInputColorVariants[variant]}}>
