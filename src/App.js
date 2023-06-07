@@ -2,8 +2,8 @@ import './App.scss';
 import {SquareInput} from "./components/SquareInput/SquareInput";
 import GitHub from './images/GitHub.png';
 import LinkdedIn from './images/LinkedIn.png';
-import {useState} from "react";
-import {binaryToDecimal} from "./utils/calculator";
+import {useEffect, useState} from "react";
+import {runCalculation} from "./utils/calculator";
 
 
 const App = () => {
@@ -11,6 +11,11 @@ const App = () => {
     const [arg2, setArg2] = useState(Array.from({length: 4}).map(() => '0'))
     const [result, setResult] = useState(Array.from({length: 8}).map(() => '0'))
     const [operator, setOperator] = useState('+')
+
+    useEffect(() => {
+            setResult(runCalculation(arg1, arg2, operator))
+        }, [arg1, arg2, operator]
+    )
 
     return (
         <div className="App">
@@ -40,9 +45,10 @@ const App = () => {
                         <div className={"horizontal-left"}/>
                         <div className="result">
                             {
-                                Array.from({length: 8}).map((item, idx) => <SquareInput order={idx} lineValues={result}
-                                                                                        setLineValues={setResult}
-                                                                                        variant={"result"}/>)
+                                result.map((value, idx) => <SquareInput order={idx} lineValues={result}
+                                                                        setLineValues={setResult}
+                                                                        defaultValue={value}
+                                                                        variant={"result"}/>)
                             }
                         </div>
                     </div>

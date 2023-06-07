@@ -12,8 +12,8 @@ export const getNextValue = (value, variant) => {
             case '+':
                 return '-'
             case '-':
-                return '*'
-            case '*':
+                return 'x'
+            case 'x':
                 return '/'
             case '/':
                 return '+'

@@ -4,8 +4,8 @@ import {useState} from "react";
 import {getDefaultValueByVariant, getNextValue} from "./SquareInput.helpers";
 
 
-export const SquareInput = ({lineValues, setLineValues, order, variant}) => {
-    const [value, setValue] = useState(getDefaultValueByVariant(variant));
+export const SquareInput = ({lineValues, setLineValues, order, variant, defaultValue}) => {
+    const [value, setValue] = useState( getDefaultValueByVariant(variant));
 
     const handleOnInputClick = () => {
         const newValue = getNextValue(value, variant)
@@ -22,7 +22,7 @@ export const SquareInput = ({lineValues, setLineValues, order, variant}) => {
     return (
         <div onClick={handleOnInputClick} className={"square_input"}
              style={{backgroundColor: SquareInputColorVariants[variant]}}>
-            {value}
+            {defaultValue || value}
         </div>
     )
 }
