@@ -3,7 +3,7 @@ import { SquareInput } from './components/SquareInput/SquareInput'
 import GitHub from './images/GitHub.png'
 import LinkdedIn from './images/LinkedIn.png'
 import { useEffect, useState } from 'react'
-import { runCalculation } from './utils/calculator'
+import { getResult } from './utils/calculator'
 
 const App = () => {
   const [arg1, setArg1] = useState(Array.from({ length: 4 }).map(() => '0'))
@@ -12,7 +12,7 @@ const App = () => {
   const [operator, setOperator] = useState('+')
 
   useEffect(() => {
-    setResult(runCalculation(arg1, arg2, operator))
+    setResult(getResult(arg1, arg2, operator))
   }, [arg1, arg2, operator])
 
   return (
