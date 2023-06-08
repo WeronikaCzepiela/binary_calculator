@@ -26,7 +26,7 @@ const decimalToBinary = (arrayOfDecimalNumbers) =>
 
 const getNormalizedResult = (binaryResult) => {
   const length = binaryResult.length
-  console.log(binaryResult)
+
   if (length < 8) {
     const i = 8 - length
     const zeros = Array.from({ length: i }, () => '0')
