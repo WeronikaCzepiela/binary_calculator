@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Binary Calculator 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application that allows you to perform basic operations on binary numbers.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The application is used to perform basic mathematical operations on binary numbers. The page consists of three sets of blocks and an operator. Clicking on the blocks responsible for taking arguments changes the value of a given block from 1 to 0 and vice versa. This, in turn, causes a different result of a given operation, which automatically displays itself in the changed version. Clicking on the operator block, on the other hand, changes the mathematical action being performed. Addition, multiplication, division, and subtraction are available. binary numbers.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Clicking on the block responsible for taking arguments changes its value from 0 to 1 and vice versa.
+* Clicking on the operator block changes its icon, and thus the action is performed on binary numbers. Addition, subtraction, multiplication, and division are available.
+* Blocks that display the result are not clickable.
+* At the bottom of the page there are references to the author's accounts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Application layout
 
-### `npm test`
+* Below are screenshots showing the appearance of the application depending on the choice of language.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./src/images/start.png">
 
-### `npm run build`
+* When performing calculations.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="./src/images/during.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Different variants of the operator. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="./src/images/operatorVariants.png">
