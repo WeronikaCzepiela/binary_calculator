@@ -26,3 +26,4 @@ The application is used to perform basic mathematical operations on binary numbe
 * Different variants of the operator. 
 
 <img src="./src/images/operatorVariants.png">
+
