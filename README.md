@@ -27,3 +27,7 @@ The application is used to perform basic mathematical operations on binary numbe
 
 <img src="./src/images/operatorVariants.png">
 
+## How to run? 
+
+`npm run start` to start project 
+
