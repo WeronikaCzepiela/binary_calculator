@@ -35,3 +35,4 @@ const getNormalizedResult = (binaryResult) => {
 
   return binaryResult
 }
+
