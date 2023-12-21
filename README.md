@@ -4,7 +4,7 @@ This is a web application that allows you to perform basic operations on binary 
 
 ## Description
 
-The application is used to perform basic mathematical operations on binary numbers. The page consists of three sets of blocks and an operator. Clicking on the blocks responsible for taking arguments changes the value of a given block from 1 to 0 and vice versa. This, in turn, causes a different result of a given operation, which automatically displays itself in the changed version. Clicking on the operator block, on the other hand, changes the mathematical action being performed. Addition, multiplication, division, and subtraction are available. binary numbers.
+The application is used to perform basic mathematical operations on binary numbers. The page consists of three sets of blocks and an operator. Clicking on the blocks responsible for taking arguments changes the value of a given block from 1 to 0 and vice versa. This, in turn, causes a different result of a given operation, which automatically displays itself in the changed version. Clicking on the operator block, on the other hand, changes the mathematical action being performed. Addition, multiplication, division, and subtraction are available.
 
 ## Features
 
