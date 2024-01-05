@@ -30,4 +30,3 @@ The application is used to perform basic mathematical operations on binary numbe
 ## How to run? 
 
 `npm run start` to start project 
-
