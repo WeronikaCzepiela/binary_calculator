@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/binary_calculator/static/css/main.df794c05.css",
+    "main.js": "/binary_calculator/static/js/main.e9b49e61.js",
+    "index.html": "/binary_calculator/index.html",
+    "main.df794c05.css.map": "/binary_calculator/static/css/main.df794c05.css.map",
+    "main.e9b49e61.js.map": "/binary_calculator/static/js/main.e9b49e61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df794c05.css",
+    "static/js/main.e9b49e61.js"
+  ]
+}
