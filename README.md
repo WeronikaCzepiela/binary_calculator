@@ -4,7 +4,7 @@ This is a web application that allows you to perform basic operations on binary 
 
 ## See the website
 
-You can see the website if you click in the [Link](https://github.com/WeronikaCzepiela/binary_calculator/deployments/github-pages)
+You can see the website if you click in the [Link](https://weronikaczepiela.github.io/binary_calculator/)
 
 ## Description
 
