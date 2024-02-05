@@ -20,7 +20,6 @@ const App = () => {
       <div className={'top'}>
         <h1>BINARY CALCULATOR</h1>
       </div>
-
       <div className={'calculator'}>
         <div className={'left_section'}>
           <div className='arg1'>
