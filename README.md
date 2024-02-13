@@ -13,8 +13,11 @@ The application is used to perform basic mathematical operations on binary numbe
 ## Features
 
 * Clicking on the block responsible for taking arguments changes its value from 0 to 1 and vice versa.
+
 * Clicking on the operator block changes its icon, and thus the action is performed on binary numbers. Addition, subtraction, multiplication, and division are available.
+
 * Blocks that display the result are not clickable.
+
 * At the bottom of the page there are references to the author's accounts.
 
 ## Application layout
